@@ -1,9 +1,28 @@
+using System.Diagnostics;
+using System;
+using WebApplication1;
+
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
 
 var app = builder.Build();
+
+//public class PersonalComputer
+//{
+//    string Processor;
+//    int Count_Of_Ram;
+//    int Volume_Of_Disk;
+//    string Operating_System;
+//    string Graphic_Card;
+
+//}
+
+PersonalComputer OptiPlex = new PersonalComputer("Intel", 8, 512, "Windows", "GTX650");
+
+
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

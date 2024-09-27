@@ -2,8 +2,16 @@
 @model IndexModel
 @{
     ViewData["Title"] = "Tyuryushkin Kirill";
+    PersonalComputer OptiPlex = new PersonalComputer("Intel", 8, 512, "Windows", "GTX650");
 }
 
 <div class="text-center">
-    <h1 class="display-4">Tyuryushkin Kirill</h1>
+    <h1>Tyuryushkin Kirill</h1>
+    <h1 class="display-4"></h1>
+    <h1>@OptiPlex.Processor</h1> 
+    <h1>@OptiPlex.Count_Of_Ram</h1>
+    <h1>@OptiPlex.Volume_Of_Disk</h1>
+    <h1>@OptiPlex.Operating_System</h1>
+    <h1>@OptiPlex.Graphic_Card</h1>
+
 </div>
